@@ -1,0 +1,8 @@
+{
+    "canisters" : {
+        "erc721" : {
+            "main" : "src/main.mo",
+            "type" : "motoko"
+        }
+    }
+}

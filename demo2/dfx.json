@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "demo2": {
+      "main": "src/demo2/icpunks.mo",
+      "type": "motoko"
+    },
+    "demo2_assets": {
+      "dependencies": [
+        "demo2"
+      ],
+      "frontend": {
+        "entrypoint": "src/demo2_assets/src/index.html"
+      },
+      "source": [
+        "src/demo2_assets/assets",
+        "dist/demo2_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
